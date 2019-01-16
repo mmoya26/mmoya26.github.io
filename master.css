@@ -292,7 +292,7 @@ button:hover {
     display: flex;
 }
 
-.footer-icons img:nth-child(2) {
+.footer-icons a:nth-child(2) {
     margin-left: 0.625rem;
 }
 
