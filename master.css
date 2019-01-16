@@ -1,0 +1,316 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #ECF0F1;
+    font-family: Open sans;
+    font-size: 1rem;
+    width: 100%;
+
+}
+
+a {
+    text-decoration: none;
+    color: #ECF0F1;
+}
+
+.orange-text {
+    color: #E74C3C;
+}
+
+/* Header CSS */
+
+header {
+    background-color: #2C3E50; 
+    height: 625px;
+    box-shadow: 0px 5px 4px 0px rgba(0,0,0,0.16);
+}
+
+.main-container {
+    max-width: 1364px;
+    margin: 0 auto;
+}
+
+.navbar {
+    padding-top: 3.125rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-list {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    width: 35%;
+    align-items: center;
+}
+
+.logo {
+    color: #ECF0F1;
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+.navbar-items {
+    color: #ECF0F1;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: 0.2s ease-in-out;
+}
+
+.navbar-items:hover {
+    color: #E74C3C;
+}
+
+.header-welcoming {
+    margin-top: 5.75rem;
+}
+
+.header-title {
+    width: 536px;
+    height: 144px;
+    font-size: 3.125rem;
+    color: #ECF0F1;
+}
+
+.header-par {
+    width: 33.5rem;
+    height: 6rem;
+    color: #ECF0F1;
+    margin-top: 2rem;
+}
+
+.header-container {
+    display: flex;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+#popcorn-icon {
+    width: 18.88rem;
+    height: 18.88rem;
+    margin-left: 27.06rem;
+}
+
+/* End Header CSS */
+
+
+/* Section Movies CSS */
+
+.movie-card-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4.688rem;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.movie-card h3 {
+    font-size: 1.875rem;
+    margin-top: 1.563rem;
+}
+
+.movie-card p {
+    margin-top: 1.563rem;
+    line-height: 1.5;
+    color: #2C3E50;
+}
+
+.movies-section {
+    margin-top: 3.125rem;
+}
+
+.movie-card {
+    display: flex;
+    flex-direction: column;
+    width: 22.5rem;
+}
+
+.movie-thumbnail {
+    width: 22.5rem;
+    height: 15rem;
+    box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.16);  
+    background-size: cover;
+}
+
+/* Movies Images */
+
+.movie-one {
+    background-image: url(images/upside.jpg);
+    background-position-x: -55px;
+}
+
+.movie-two {
+    background-image: url(images/nightschool.jpg);
+    background-position-x: -35px;
+}
+
+.movie-three {
+    background-image: url(images/lotoman1.jpg);
+}
+
+/* Coming Soon Movies */
+
+.movie-cs-one {
+    background-image: url(images/pikachu.jpg);
+}
+
+.movie-cs-two {
+    background-image: url(images/trabajosucio.jpg);
+}
+
+.movie-cs-three {
+    background-image: url(images/lotoman2.jpg);
+    background-position-y: -35px;
+}
+
+/* End Movies Images */
+
+.movie-card-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.563rem;
+}
+
+.btn-blue {
+    padding: 0.6875rem 2.375rem; 
+    background-color: #3498DB;
+    transition: 0.2s ease-in-out;
+}
+
+.btn-blue:hover {
+    background-color: #E74C3C;
+}
+
+.btn-text-white {
+    font-weight: bold;
+}
+
+.btn-grey {
+    border: 2px solid rgba(112, 112, 112, 0.5);
+    padding: 0.6875rem 2.375rem;
+    opacity: 0.8;
+    transition: 0.2s ease-in-out;  
+}
+
+.btn-grey:hover {
+    background-color: #E74C3C;
+    color: #ECF0F1;
+}
+
+.btn-text-grey {
+    color: rgba(112, 112, 112, 0.8);
+    font-weight: bold;
+    
+}
+
+/* End Section Movies CSS */
+
+/* Suscribe Section CSS */
+
+.suscribe-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 18.75rem;
+    margin-top: 4.688rem;
+    background-image: linear-gradient(rgba(44, 62, 80, 0.8), rgba(44, 62, 80, 0.8)), url(images/threatre.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+
+.suscribe-section h3 {
+    font-size: 2.5rem;
+}
+
+.suscribe-par {
+    color: #ECF0F1;
+}
+
+form {
+    margin-top: 1.875rem;
+}
+
+input {
+    width: 31.25rem;
+    height: 2.75rem;
+    border: 1px solid #ECF0F1;
+    background-color: transparent;
+    padding-left: 1.25rem;
+    color: #ECF0F1;
+}
+
+button {
+    width: 168px;
+    height: 44px;
+    background-color: #E74C3C;
+    border: none;
+    color: #ECF0F1;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.2s ease-in-out;
+}
+
+button:hover {
+    background-color: #3498DB;
+}
+
+/* End Suscribe Section CSS */
+
+/* Footer CSS */
+
+.footer-section {
+    margin-top:  6.25rem;
+    padding-bottom: 30px;
+    color: #2C3E50;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.f-follow-p {
+    margin-top: 1.25rem
+}
+
+.footer-icons {
+    margin-top: 1.25rem;
+    display: flex;
+}
+
+.footer-icons img:nth-child(2) {
+    margin-left: 0.625rem;
+}
+
+.footer-credits {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-credits a {
+    color: #2C3E50;
+}
+
+.footer-credits p {
+    margin-top: 1.25rem;
+}
+
+p a {
+    font-weight: bold;
+}
+
+/* End Footer CSS */
