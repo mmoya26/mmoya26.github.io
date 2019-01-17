@@ -30,6 +30,7 @@ header {
 
 .main-container {
     max-width: 1364px;
+    width: 90%;
     margin: 0 auto;
 }
 
