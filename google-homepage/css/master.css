@@ -28,6 +28,7 @@ li {
 
 a {
     text-decoration: none;
+    color: #404040;
 }
 
 img {
@@ -69,7 +70,6 @@ input:hover {
 .pa-form-buttons a {
     padding: 10px 15px;
     margin-right: 10px;
-    color: #66696d;
     background-color: #f3f3f3;
     font-size: 0.855rem;
     border-radius: 5px;
