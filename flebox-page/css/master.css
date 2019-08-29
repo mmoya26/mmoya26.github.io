@@ -145,31 +145,31 @@ section h2 {
 /* Movies Images */
 
 .movie-one {
-    background-image: url(images/upside.jpg);
+    background-image: url(../images/upside.jpg);
     background-position-x: -55px;
 }
 
 .movie-two {
-    background-image: url(images/nightschool.jpg);
+    background-image: url(../images/nightschool.jpg);
     background-position-x: -35px;
 }
 
 .movie-three {
-    background-image: url(images/lotoman1.jpg);
+    background-image: url(../images/lotoman1.jpg);
 }
 
 /* Coming Soon Movies */
 
 .movie-cs-one {
-    background-image: url(images/pikachu.jpg);
+    background-image: url(../images/pikachu.jpg);
 }
 
 .movie-cs-two {
-    background-image: url(images/trabajosucio.jpg);
+    background-image: url(../images/trabajosucio.jpg);
 }
 
 .movie-cs-three {
-    background-image: url(images/lotoman2.jpg);
+    background-image: url(../images/lotoman2.jpg);
     background-position-y: -35px;
 }
 
@@ -224,7 +224,7 @@ section h2 {
     align-items: center;
     height: 18.75rem;
     margin-top: 4.688rem;
-    background-image: linear-gradient(rgba(44, 62, 80, 0.8), rgba(44, 62, 80, 0.8)), url(images/threatre.jpg);
+    background-image: linear-gradient(rgba(44, 62, 80, 0.8), rgba(44, 62, 80, 0.8)), url(../images/threatre.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
