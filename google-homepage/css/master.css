@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.d-flex {
+    display: flex;
+}
+
+nav {
+    margin: 20px auto 0 auto;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+li {
+    margin: 0 10px;
+    color: #000;
+    opacity: 0.75;
+    font-size: 0.855rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+#pa-google-logo {
+    width: 17%;
+}
+
+.form-container {
+    flex-direction: column;
+    margin: 200px auto;
+    align-items: center;
+}
+
+input {
+    margin-top: 20px;
+    border: 1px solid #c9c9c9;
+    border-radius: 30px;
+    width: 550px;
+    padding: 15px 15px;
+    outline: none;
+    font-size: 0.855rem;
+}
+
+input:hover {
+    box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+    border-color: rgba(223,225,229,0);
+}
+
+.pa-form-buttons {
+    margin-top: 25px;
+    align-items: flex-start;
+}
+
+.pa-form-buttons a {
+    padding: 10px 15px;
+    margin-right: 10px;
+    color: #66696d;
+    background-color: #f3f3f3;
+    font-size: 0.855rem;
+    border-radius: 5px;
+}
+
+.pa-form-buttons a:hover {
+    color: #222;
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    border: 1px solid #c6c6c6;
+    padding: 9px 14px;
+}
+
+footer {
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;;
+    padding: 15px 0;
+    background-color: #f3f3f3;
+    position: fixed;
+    bottom: 0;
+}
+
+.w-container {
+    justify-content: space-between;
+    width: 98%;
+    margin: 0 auto;
+}
+
+footer a {
+    color: #000;
+    opacity: 0.75;
+}
+
+#navbar-profile-picture {
+    width: 32px;
+    height: 32px;
+    background-image: url("../images/tesla-roadster-red-electricity-cars-luxury-vehicle-18630.jpg");
+    background-size: cover;
+    border-radius: 50%;
+    background-position-x: center;
+    cursor: pointer;
+}
+
+#navbar-menu-icon {
+    width: 18px;
+    height: 20px;
+    background-image: url("../images/th-solid.png");
+    background-size: cover;
+    background-position-x: center;
+    cursor: pointer;
+}
