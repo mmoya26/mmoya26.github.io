@@ -1,0 +1,358 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat;
+    box-sizing: border-box;
+}
+
+:root {
+    --navbar_backgroud_color: #1b1b1b;
+    --blue_plus: #2bbfc9;
+    --normal_text_size: 0.875rem;
+    --black_plus: #1b1b1b;
+    --grey_plus: #F5F5F5;
+    --graphite_plus: #586069;
+    --soft_b_plus: #24292E;
+}
+
+/* General Classes */
+
+a {
+    text-decoration: none;
+}
+
+.small_button {
+    padding: 0.75rem 2.5rem;
+    border-radius: 5px;
+}
+
+.blue_button {
+    background-color: var(--blue_plus);
+}
+
+.black_button {
+    background-color: var(--black_plus); 
+}
+
+.grey_button {
+    background-color: var(--grey_plus);
+}
+
+.graphite_text {
+    color: var(--graphite_plus);
+}
+
+.button {
+    border-radius: 5px;
+    display: inline-block;
+}
+.large_button {
+    padding: 0.625rem;
+}
+
+.white_text {
+    color: white;
+}
+
+.normal_text_size {
+    font-size: var(--normal_text_size);
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.semi_bold {
+    font-weight: 600;
+}
+
+.content_container {
+    width: 90%;
+    /* background-color: red; */
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+/* End General Classes */
+
+/* Navigation Bar Start */
+
+nav {
+    background-color: var(--navbar_backgroud_color);
+    padding: 1rem 0;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 50rem;
+}
+
+.nav_bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul li {
+    color: white;
+    font-weight: 400;
+    padding: 1.25rem 1.56rem;
+}
+
+.logo_letters {
+    font-weight: 700;
+}
+
+.logo_plus_sign {
+    color: var(--blue_plus)
+}
+
+.logo_size {
+    font-size: 1.6rem;
+}
+
+h1 {
+    font-size: 2rem;
+    color: var(--soft_b_plus);
+}
+
+
+img {
+    height: auto;
+}
+
+/* Navigation Bar End */
+
+/* Hero Section Start */
+
+#hero_section {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 6.25rem;
+    padding-bottom: 6.25rem;
+}
+
+#sharing_code_image {
+    max-width: 100%;
+    width: 25rem;
+}
+
+.hero_section_left_side {
+    max-width: 32rem;
+}
+
+.hero_section_margin {
+    margin-top: 6.25rem;
+    margin-bottom: 6.25rem;
+}
+
+.hero_section_title {
+    margin-bottom: 0.93rem;
+}
+
+.signin_block {
+    margin-top: 0.93rem;
+}
+
+.signin_block a:nth-child(2) {
+    margin-left: 0.625rem
+}
+
+.signin_image {
+    vertical-align: middle; 
+    display: inline-block;
+    margin-right: 0.312rem;
+}
+
+.signin_button {
+    -webkit-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.1);
+    box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.1);
+}
+
+/* Hero Section End */
+
+/* Repositories Start */
+
+.repositories_section {
+    background-color: #F5F5F5;
+    padding: 6.25rem 0;
+}
+
+#repositories_section_id {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cards_main_container {
+    display: flex;
+    width: 75%;
+    flex-wrap: wrap;
+}
+
+.main_repositories_title {
+    color: var(--soft_b_plus);
+    margin-bottom: 4.6875rem;
+}
+
+.card {
+    background-color: white;
+    padding: 0.625rem 2.1875rem;
+    width: 45%;
+    margin-top: 2.5rem;
+    margin-left: 1.875rem;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.1);
+    box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.1);
+}
+
+.card_title {
+    color: var(--soft_b_plus);
+    margin-bottom: 0.625rem;
+    margin-top: 0.9375rem;
+}
+
+
+.card_tag {
+    padding: 0.375rem 0.625rem;
+    background-color: #E5E5E5;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 0.75rem;
+}
+
+.card_description {
+    margin-top: 0.625rem;
+    margin-bottom: 0.625rem;
+}
+
+.card_button {
+    margin-top: 0.9375rem;
+    margin-bottom: 0.9375rem;
+}
+
+
+.card hr {
+    background-color: #E5E5E5;
+    border: none;
+    height: 1px;
+}
+
+.card_view_more_button {
+    color: white;
+    margin-top: 4.6875rem;
+    padding: 1.25rem 3.75rem;
+    -webkit-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.1);
+    box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.1);
+}
+
+/* Repositories End */
+
+/* Collaboration Section Start */
+.collaboration_section {
+    background-color: #F5F5F5;
+    padding: 6.25rem 0;
+}
+
+#collaboration_section_id {
+    display: flex;
+    justify-content: space-around;
+}
+
+#collaboration_image {
+    max-width: 100%;
+    width: 25rem;
+}
+
+.checkmark_image {
+    width: 1.625rem;
+    max-width: 100%;
+    margin-right: 0.625rem;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.check_mark_outside_container {
+    display: flex;
+}
+.collaboration_right_column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 12rem;
+    width: 42%
+}
+
+.collaboration_title {
+    margin-bottom: 0.9375rem;
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--black_plus)
+}
+
+.collaboration_description {
+    margin-bottom: 1.25rem;
+    width: 100%;
+}
+
+.check_mark_container {
+    margin-right: 3.125rem;
+}
+
+.checkmark_item {
+    display: inline-block;
+    margin-bottom: 1.25rem;
+}
+/* Collaboration Section End */
+
+
+/* Join Section Start */
+#join_section {
+    background-image: linear-gradient(rgb(0 0 0 / 80%), rgb(0 0 0 / 80%)), url(../images/kaleidico-7lryofJ0H9s-unsplash.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 20rem;
+    background-position: center -7.5rem;
+    justify-content: center;
+}
+
+.blackout {
+    background-color: black;
+}
+
+.join_title {
+    font-size: 1.5rem;
+}
+
+.join_description {
+    margin-bottom: 4.0625rem;
+    margin-top: 0.9375rem;
+    width: 35%;
+    text-align: center;
+}
+
+/* Join Section End */
+
+/* Footer Start */
+.footer_logo {
+    color: #24292E;
+}
+
+.social_media {
+    display: flex;
+    align-items: center;
+}
+
+.social_media img {
+    vertical-align: center;
+    display: inline-block;
+    margin-right: 2.1875rem;
+}
+/* Footer End */
