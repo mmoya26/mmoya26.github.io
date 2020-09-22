@@ -316,10 +316,12 @@ img {
     margin-bottom: 1.25rem;
     width: 100%;
 }
+.check_mark_container p:nth-child(1) {
+    margin-bottom: 1.25rem;
+}
 
 .checkmark_item {
     display: inline-block;
-    margin-bottom: 1.25rem;
 }
 /* Collaboration Section End */
 
@@ -476,6 +478,28 @@ footer {
 
     .card_tags_container span:nth-child(4) {
         display: none;
+    }
+}
+
+@media (max-width: 599px) {
+    .join_description {
+        margin: 0.625rem 0;
+    }
+
+    #join_section {
+        background-position: center center;
+    }
+
+    .collaboration_right_column {
+        width: 100%;
+    }
+
+    .hero_section_left_side {
+        width: 100%;
+    }
+
+    .card {
+        margin-left: 0;
     }
 }
 
