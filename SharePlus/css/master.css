@@ -590,4 +590,8 @@ footer {
         margin-top: 0.9375rem;
         margin-left: 0;
     }
+    
+    .checkmark_item {
+        margin-bottom: 1.25rem;
+    }
 }
