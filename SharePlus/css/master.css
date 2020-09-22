@@ -8,7 +8,6 @@
 :root {
     --navbar_backgroud_color: #1b1b1b;
     --blue_plus: #2bbfc9;
-    --normal_text_size: 0.875rem;
     --black_plus: #1b1b1b;
     --grey_plus: #F5F5F5;
     --graphite_plus: #586069;
@@ -55,7 +54,7 @@ a {
 }
 
 .normal_text_size {
-    font-size: var(--normal_text_size);
+    font-size: 0.875rem;
 }
 
 .bold {
@@ -73,6 +72,12 @@ a {
     margin: 0 auto;
 }
 
+.box_shadow {
+    -webkit-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.1);
+    box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.1);
+}
+
 /* End General Classes */
 
 /* Navigation Bar Start */
@@ -86,7 +91,22 @@ ul {
     list-style: none;
     display: flex;
     justify-content: space-between;
-    margin-right: 50rem;
+    margin-right: auto;
+    margin-left: 1.25rem;
+}
+
+.container_hambuger {
+    display: none;
+    cursor: pointer;
+  }
+  
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    border-radius: 5px;
+    margin: 6px 0;
+    transition: 0.4s;
 }
 
 .nav_bar {
@@ -135,12 +155,12 @@ img {
 }
 
 #sharing_code_image {
-    max-width: 100%;
-    width: 25rem;
+    max-width: 65%;
+    width: 32rem;
 }
 
 .hero_section_left_side {
-    max-width: 32rem;
+    width: 35%;
 }
 
 .hero_section_margin {
@@ -246,9 +266,6 @@ img {
     color: white;
     margin-top: 4.6875rem;
     padding: 1.25rem 3.75rem;
-    -webkit-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.1);
-    -moz-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.1);
-    box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.1);
 }
 
 /* Repositories End */
@@ -261,12 +278,12 @@ img {
 
 #collaboration_section_id {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 #collaboration_image {
-    max-width: 100%;
-    width: 25rem;
+    max-width: 60%;
+    width: 32rem;
 }
 
 .checkmark_image {
@@ -285,7 +302,7 @@ img {
     flex-direction: column;
     justify-content: center;
     margin-right: 12rem;
-    width: 42%
+    width: 40%
 }
 
 .collaboration_title {
@@ -300,10 +317,6 @@ img {
     width: 100%;
 }
 
-.check_mark_container {
-    margin-right: 3.125rem;
-}
-
 .checkmark_item {
     display: inline-block;
     margin-bottom: 1.25rem;
@@ -315,12 +328,12 @@ img {
 #join_section {
     background-image: linear-gradient(rgb(0 0 0 / 80%), rgb(0 0 0 / 80%)), url(../images/kaleidico-7lryofJ0H9s-unsplash.jpg);
     background-size: cover;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     height: 20rem;
     background-position: center -7.5rem;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 .blackout {
@@ -329,18 +342,23 @@ img {
 
 .join_title {
     font-size: 1.5rem;
+    text-align: center;
 }
 
 .join_description {
-    margin-bottom: 4.0625rem;
-    margin-top: 0.9375rem;
     width: 35%;
     text-align: center;
+    margin: 0.9375rem auto 4.0625rem auto;
 }
 
 /* Join Section End */
 
 /* Footer Start */
+
+footer {
+    padding: 1rem 0;
+}
+
 .footer_logo {
     color: #24292E;
 }
@@ -356,3 +374,196 @@ img {
     margin-right: 2.1875rem;
 }
 /* Footer End */
+
+
+/* Media Queries */
+
+@media (max-width: 1559px) {
+    /* Collaboration Section */ 
+
+    #collaboration_image {
+        width: 25rem;
+    }
+
+    .collaboration_right_column {
+        width: 50%;
+        margin-right: 6rem;
+    }
+}
+
+@media (max-width: 1394px) {
+    /* Hero Section */
+
+    #sharing_code_image {
+        width: 25rem;
+    }
+
+    .hero_section_sign_in a{
+        margin: 0.9375rem 0 0 0 !important;
+        display: block;
+        text-align: center;
+    }
+
+    /* Repositories section */
+    .cards_main_container {
+        width: 90%;
+    }
+}
+
+@media (max-width: 1120px) {
+    h1 {
+        font-size: 1.75rem;
+    }
+
+    .join_description {
+        width: 60%;
+    }
+
+    #sharing_code_image {
+        width: 20rem;
+    }
+
+    .normal_text_size {
+        font-size: 0.75rem;
+    }
+
+    .cards_main_container {
+        width: 100%;
+    }
+}
+
+@media (max-width: 900px) {
+    .cards_main_container {
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 80%;
+    }
+}
+
+@media (max-width: 780px) {
+    ul {
+        display: none;
+    }
+
+    .container_hambuger {
+        display: inline-block;
+    }
+
+    #btn_nav_sign_in {
+        display: none;
+    }
+
+    img {
+        display: none;
+    }
+
+    .hero_section_left_side {
+        width: 65%;
+    }
+
+    .collaboration_right_column {
+        margin-right: 0;
+        width: 80%;
+    }
+
+    #collaboration_section_id {
+        justify-content: center;
+    }
+
+    .card_tags_container span:nth-child(4) {
+        display: none;
+    }
+}
+
+@media (max-width: 375px) {
+
+    h1 {
+        font-size: 1.375rem;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+
+    h3 {
+        font-size: 0.875rem;
+    }
+
+    .hero_section_title {
+        margin-bottom: 1.875rem;
+    }
+
+    .hero_section_left_side {
+        width: 100%;
+    }
+    
+    .signin_block {
+        margin-top: 1.875rem;
+    }
+
+    .repositories_section {
+        padding: 3.125rem 0;
+    }
+
+    .main_repositories_title {
+        margin-bottom: 2.344rem;
+    }
+
+    .card {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .card_button {
+        display: block;
+        text-align: center;
+    }
+
+    #repositories_section_id {
+        align-items: normal;
+    }
+
+    .cards_main_container .card:nth-child(-n+3) {
+        display: none;
+    }
+
+    .card_title {
+        text-align: center;
+    }
+
+    .main_repositories_title {
+        text-align: center;
+    }
+
+    .card_view_more_button {
+        text-align: center;
+    }
+
+    .check_mark_outside_container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #join_section {
+        height: 25rem;
+    }
+
+    .join_description {
+        margin: 0.938rem 0 0 0;
+    }
+
+    #join_signin_block {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #join_signin_block a:nth-child(2) {
+        margin-top: 0.9375rem;
+        margin-left: 0;
+    }
+}
