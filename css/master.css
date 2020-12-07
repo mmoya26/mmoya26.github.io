@@ -4,6 +4,7 @@
 
 .d-flex {
     display: flex;
+    margin-bottom: 40px;
 }
 
 h1 {
