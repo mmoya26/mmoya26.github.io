@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excel column incrementer</title>
+    <link rel="stylesheet" href="master.css">
+    <script src="table2excel.js"></script>
+</head>
+    <div class="controls_container">
+        <input type="submit" value="+" id="btn_add" class="btn_submit">
+        <input type="submit" value="Reset" id="btn_reset" class="btn_submit">
+        <input type="submit" value="Generate" id="btn_generate" class="btn_submit">
+        <input type="submit" value="Download" id="btn_download" class="btn_submit">
+        <img src="trash-can.png" alt="Trash can Icon" id="trash_icon" ondrop="drop(event)" ondragover="allowDrop(event)">
+    </div>
+    <br/>
+    <br/>
+    <div id="inputs_container">
+    </div> 
+    <br/>
+    <div id="table_container">
+        <table style="width:100%" id="generated_table">
+            <tr>
+                <th id="table_heading">Generated rows</th>
+            </tr>
+        </table>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
