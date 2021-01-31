@@ -13,9 +13,9 @@
     <nav class="content_container">
         <a href="#" class="logo"><span class="red_m">M</span>MOYA</a>
         <ul class="navbar_list">
-            <li><a href="#">Skills</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
     
@@ -28,7 +28,7 @@
         </div>
     </header>
 
-    <section class="projects_section content_container">
+    <section class="projects_section content_container" id="projects">
         <h3 class="project_section_title">Projects</h3>
         <div class="projects">
             <div class="project">
@@ -63,17 +63,19 @@
         </div>
     </section>
     
-    <section>
+    <section class="skills_section" id="skills">
         <h3>Skills</h3>
-        <i class="fab fa-4x fa-html5" aria-hidden="true"></i>
-        <i class="fab fa-4x fa-css3" aria-hidden="true"></i>
-        <i class="fab fa-4x fa-js-square"></i>
-        <i class="fab fa-4x fa-github-square"></i>
-        <i class="fab fa-4x fa-figma"></i>
+        <div class="skills_icons">
+            <i class="fab fa-4x fa-html5 skills_icon" aria-hidden="true"><span>HTML5</span></i>
+            <i class="fab fa-4x fa-css3 skills_icon" aria-hidden="true"><span>CSS3</span></i>
+            <i class="fab fa-4x fa-js-square skills_icon"><span>JavaScript</span></i>
+            <i class="fab fa-4x fa-github-square skills_icon"><span>Git & GitHub</span></i>
+            <i class="fab fa-4x fa-figma skills_icon"><span>Figma</span></i>
+        </div>
         <!-- Missing C# for now -->
     </section>
 
-    <footer>
+    <footer id="contact">
         <h3>Contact</h3>
         <a href="#" class="contact_button"><div class="contact_icon"><i class="fas fa-2x fa-envelope"></i></div>Email</a>
         <a href="#" class="contact_button"><div class="contact_icon"><i class="far fa-2x fa-file"></i></div>Resume</a>
