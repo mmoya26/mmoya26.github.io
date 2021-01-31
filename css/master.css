@@ -61,6 +61,7 @@ nav {
 nav ul li a {
     color: #4C4C4C;
     font-size: 1rem;
+    font-weight: 500;
 }
 
 .navbar_list {
@@ -189,4 +190,33 @@ i {
     font-size: 1rem;
     font-weight: 700;
     margin-top: 0.625rem;
+}
+
+/* Contact Section */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 9.375rem;
+    margin-bottom: 2.5rem;
+}
+
+.contact_button {
+    padding: 1.25rem 1.875rem;
+    background-color: #F2F2F2;
+    margin-left: 4.375rem;
+}
+
+.contact_icon {
+    display: flex;
+    
+}
+
+.contact_icon i span {
+    color: #4C4C4C;
+    font-size: 1rem;
+    vertical-align: middle;
+    margin-left: 0.625rem;
+    font-weight: 700;
 }
