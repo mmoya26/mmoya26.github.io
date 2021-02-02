@@ -56,7 +56,7 @@ ul {
 nav {
     display: flex;
     justify-content: space-between;
-    margin: 40px auto 0 auto;
+    margin: 2.5rem auto 0 auto;
 }
 
 nav ul li a {
@@ -75,6 +75,37 @@ nav ul li a {
     display: none;
     color: #4C4C4C;
     cursor: pointer;
+}
+
+.side_bar {
+    position: absolute;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 30%;
+    overflow: hidden;
+    margin-top: -2.5rem;
+    right: 0;
+}
+
+.x {
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: white;
+    right: 0;
+    margin: 1.25rem 1.25rem 1.25rem 0;
+    align-self: flex-end;
+}
+
+.side_bar li a {
+    color: white;
+    display: inline-block;
+    margin: 0 0 1.5625rem 1.5625rem;
+}
+
+.display_none {
+    display: none;
 }
 
 /* Header */
