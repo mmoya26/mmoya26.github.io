@@ -117,12 +117,14 @@ header {
 }
 
 .project {
-    max-width: 29rem;
+    max-width: 35%;
+    margin: 0 2.5rem 3.75rem 2.5rem;  
 }
 
 .projects {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .project_img {
@@ -330,5 +332,9 @@ footer {
 @media (max-width: 375px) {
     h1 {
         font-size: 1.75rem;
+    }
+
+    .project {
+        margin: 0 0.5rem 3.75rem 0.5rem;
     }
 }
