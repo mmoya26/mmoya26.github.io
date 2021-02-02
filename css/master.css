@@ -222,3 +222,18 @@ footer {
     margin-left: 0.625rem;
     font-weight: 700;
 }
+
+/*  Responsive */
+
+
+@media (max-width: 1500px) {
+    .navbar_list {
+        width: 20%;
+    }
+}
+
+@media (max-width: 1200PX) {
+    .navbar_list {
+        width: 30%;
+    }
+}
