@@ -297,3 +297,35 @@ footer {
         display: block;
     }
 }
+
+@media (max-width: 610px) {
+    .project {
+        max-width: 28rem;
+    }
+
+    h2 {
+        font-size: 0.9375rem;
+        text-align: center;
+    }
+}
+
+@media (max-width: 500px) {
+    .project {
+        max-width: 22rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .contact_buttons {
+        flex-direction: column;
+    }
+
+    .contact_button {
+        display: flex;
+        justify-content: center;
+    }
+
+    .skills_icon {
+        width: 50%;
+    }
+}
