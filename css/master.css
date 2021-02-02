@@ -128,20 +128,17 @@ header {
     background-color: black;
     height: 256px;
     border-radius: 0.3125rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 #project_image_shareplus {
     background-image: url(../images/shareplus.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
 #project_image_testrail {
-    background-image: url(../images/python.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    background-image: url(../images/python.png);  
 }
 
 .project_title {
@@ -236,7 +233,6 @@ footer {
 }
 
 /*  Responsive */
-
 
 @media (max-width: 1500px) {
     .navbar_list {
