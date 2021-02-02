@@ -74,6 +74,7 @@ nav ul li a {
 #bars {
     display: none;
     color: #4C4C4C;
+    cursor: pointer;
 }
 
 /* Header */
@@ -323,5 +324,11 @@ footer {
 
     .skills_icon {
         width: 50%;
+    }
+}
+
+@media (max-width: 375px) {
+    h1 {
+        font-size: 1.75rem;
     }
 }
