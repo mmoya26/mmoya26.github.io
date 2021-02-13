@@ -37,6 +37,12 @@ section {
 .bold {
     font-weight: 700;
 }
+
+::selection {
+    background-color: #7a7a7a;
+    color: white;
+}
+
  /* Navbar */
 
 .red_m {
