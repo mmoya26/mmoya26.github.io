@@ -88,7 +88,7 @@ nav ul li a {
 }
 
 .side_bar {
-    position: absolute;
+    position: fixed;
     background-color: #fff;
     display: flex;
     flex-direction: column;
@@ -96,6 +96,8 @@ nav ul li a {
     width: 200px;
     overflow: hidden;
     right: 0;
+    z-index: 2;
+    margin-top: -40px;
 }
 
 .x {
@@ -353,6 +355,10 @@ footer {
     #bars {
         display: block;
     }
+
+    h2 {
+        text-align: center;
+    }
 }
 
 @media (max-width: 610px) {
@@ -362,7 +368,6 @@ footer {
 
     h2 {
         font-size: 0.9375rem;
-        text-align: center;
     }
 }
 

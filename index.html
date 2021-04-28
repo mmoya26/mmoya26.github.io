@@ -10,14 +10,13 @@
     <link rel="stylesheet" href="./css/master.css">
 </head>
 <body>
-    <div class="overlay display_none">
-        <ul class="side_bar display_none" id="side_bar">
-            <span class="x" id="x">&#10005;</span>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </div>
+    <div class="overlay display_none"></div>
+    <ul class="side_bar display_none" id="side_bar">
+        <span class="x" id="x">&#10005;</span>
+        <li><a href="#skills" class="side_bar_link">Skills</a></li>
+        <li><a href="#projects" class="side_bar_link">Projects</a></li>
+        <li><a href="#contact" class="side_bar_link">Contact</a></li>
+    </ul>
     
     <nav class="content_container">
         <a href="index.html" class="logo"><span class="red_m">M</span>MOYA</a>
@@ -78,24 +77,24 @@
                         class="btn btn_normal btn_red">Source Code</a>
                 </div>
             </div>
-        </div>
-        <div class="project">
-            <div class="project_img" id="project_image_shareplus"></div>
-            <h4 class="project_title">SharePlus</h4>
-            <div class="project_icons">
-                <i class="fab fa-3x fa-html5 project_icon" aria-hidden="true"></i>
-                <i class="fab fa-3x fa-css3 project_icon" aria-hidden="true"></i>
-                <i class="fab fa-3x fa-github-square project_icon"></i>
+            <div class="project">
+                <div class="project_img" id="project_image_shareplus"></div>
+                <h4 class="project_title">SharePlus</h4>
+                <div class="project_icons">
+                    <i class="fab fa-3x fa-html5 project_icon" aria-hidden="true"></i>
+                    <i class="fab fa-3x fa-css3 project_icon" aria-hidden="true"></i>
+                    <i class="fab fa-3x fa-github-square project_icon"></i>
+                </div>
+                <p class="project_paragraph">Website created with the intent to practice Flexbox skills. Designed to keep
+                    track of famous and share your own GitHub repositories
+                </p>
+                <div class="project_buttons">
+                    <a href="./SharePlus/index.html" target="_blank" class="btn btn_normal btn_red">Visit Page</a>
+                    <a href="https://github.com/mmoya26/SharePlus" target="_blank" class="btn btn_normal btn_grey">Source
+                        Code</a>
+                </div>
             </div>
-            <p class="project_paragraph">Website created with the intent to practice Flexbox skills. Designed to keep
-                track of famous and share your own GitHub repositories
-            </p>
-            <div class="project_buttons">
-                <a href="./SharePlus/index.html" target="_blank" class="btn btn_normal btn_red">Visit Page</a>
-                <a href="https://github.com/mmoya26/SharePlus" target="_blank" class="btn btn_normal btn_grey">Source
-                    Code</a>
-            </div>
-        </div>
+        </div>  
     </section>
 
     <section class="skills_section content_container" id="skills">

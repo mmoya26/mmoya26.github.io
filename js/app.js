@@ -19,19 +19,17 @@ let overlayScreen = document.querySelector('.overlay');
 // Side bar links
 let sideBarItems = Array.from(document.querySelectorAll('.side_bar li a'));
 
-bars.addEventListener("click", () => {
-    side_bar.classList.toggle("display_none");
-    overlayScreen.classList.toggle('display_none');
-});
+overlayScreen.addEventListener("click", removeOverlay);
 
-x_icon.addEventListener("click", () => {
-    side_bar.classList.toggle("display_none");
-    overlayScreen.classList.toggle('display_none');
-});
+bars.addEventListener("click", removeOverlay);
+
+x_icon.addEventListener("click", removeOverlay);
 
 sideBarItems.forEach(item => {
-    item.addEventListener("click", (e) => {
-        side_bar.classList.toggle("display_none");
-        overlayScreen.classList.toggle('display_none');
-    });
+    item.addEventListener("click", removeOverlay);
 })
+
+function removeOverlay() {
+    side_bar.classList.toggle("display_none");
+    overlayScreen.classList.toggle('display_none');
+}
