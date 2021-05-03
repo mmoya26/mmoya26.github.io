@@ -35,7 +35,7 @@ section {
 }
 
 .content_container {
-    width: 90%;
+    max-width: 1400px;
 }
 
 .bold {
@@ -147,6 +147,10 @@ header {
     color: white;  
 }
 
+.btn_red_border {
+    border: 2px solid #FF4747;
+}
+
 .btn_grey {
     color: #4C4C4C;
 }
@@ -160,7 +164,12 @@ header {
 
 .project {
     max-width: 35%;
-    margin: 0 2.5rem 3.75rem 2.5rem;  
+    margin: 0 2.5rem 3.75rem 2.5rem;
+    transition: all ease .2s;
+}
+
+.project:hover {
+    transform: translate(0, -0.313rem);
 }
 
 .projects {
