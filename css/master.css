@@ -325,6 +325,12 @@ footer {
     }
 }
 
+@media (max-width: 1450px) {
+    nav {
+        width: 90%;
+    }
+}
+
 @media (max-width: 1200px) {
     .navbar_list {
         width: 30%;
