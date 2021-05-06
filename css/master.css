@@ -136,6 +136,12 @@ header {
     display: inline-block;
     font-weight: 700;
     border-radius: 0.3125rem;
+    transition: all ease .2s;
+    border: 2px solid transparent;
+}
+
+.btn:hover {
+    transform: translate(0, -0.313rem);
 }
 
 .btn_normal {
@@ -147,12 +153,19 @@ header {
     color: white;  
 }
 
-.btn_red_border {
-    border: 2px solid #FF4747;
-}
-
 .btn_grey {
     color: #4C4C4C;
+}
+
+.btn_red:hover {
+    border: 2px solid #FF4747;
+    background-color: transparent;
+    color: #4C4C4C;
+}
+
+.btn_grey:hover {
+    background-color: #FF4747;
+    color: white;
 }
 
 /* Projects Section */
