@@ -213,6 +213,10 @@ header {
     background-position: 0 0;
 }
 
+#project_image_titactoe {
+    background-image: url(../images/titactoe.png);
+}
+
 .project_title {
     margin-top: 0.9375rem;
     font-size: 1.5rem;
