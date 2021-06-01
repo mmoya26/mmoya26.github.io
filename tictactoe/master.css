@@ -17,7 +17,7 @@ a:hover {
     display: flex;
     flex-wrap: wrap;
     background: black;
-    width: 500px;
+    max-width: 500px;
     margin: 0 auto;
 }
 
@@ -81,4 +81,30 @@ button:hover {
     color: #40ca32;
     text-align: center;
     margin-top: 1.25rem;
+}
+
+@media (max-width: 500px) {
+    .tiles_container {
+        max-width: 380px;
+    }
+
+    .tile {
+        width: 32.8%;
+        height: 124px;
+        line-height: 130px;
+        font-size: 80px;
+    }
+}
+
+@media (max-width: 400px) {
+    .tiles_container {
+        max-width: 330px;
+    }
+
+    .tile {
+        width: 32.7%;
+        height: 100px;
+        line-height: 102px;
+        font-size: 70px;
+    }
 }
