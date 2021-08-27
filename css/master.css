@@ -217,6 +217,10 @@ header {
     background-image: url(../images/titactoe.png);
 }
 
+#project_image_loan_simulator {
+    background-image: url(../images/lwc.png);
+}
+
 .project_title {
     margin-top: 0.9375rem;
     font-size: 1.5rem;
