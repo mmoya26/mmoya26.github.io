@@ -356,17 +356,15 @@ footer {
         margin-bottom: 5.25rem;
         max-width: 34rem;
     }
-}
 
-@media (max-width: 760px) {
     .skills_icon {
         width: 25%;
         margin-bottom: 3rem;
+        justify-content: center;
     }
+}
 
-    .skills_icons {
-        justify-content: flex-start;
-    }
+@media (max-width: 760px) {
 
     .navbar_list {
         width: 40%;
