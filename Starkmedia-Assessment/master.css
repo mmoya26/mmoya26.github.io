@@ -1,0 +1,603 @@
+:root {
+    --main--bg-color: var(--main-white-color);
+    --main-green-color: #006942;
+    --main-white-color: #fff;
+    --regular-text-color: #444444;
+    --titles-grey-color: #222;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Source Sans Pro";
+}
+
+img {
+    width: 100%;
+}
+
+body {
+    background-color: var(--main--bg-color);
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+.font_awesome_icons {
+    background-color: transparent;
+    color: #ccc;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.carousell_button {
+    border: 1px solid #ccc;
+    background-color: transparent;
+    width: .7rem;
+    height: .7rem;
+    border-radius: 3.125rem;
+    cursor: pointer;
+    margin-right: .2rem;
+}
+
+.transparent_button {
+    border: 3px solid transparent;
+    padding: 10px 25px;
+    text-transform: uppercase;
+    transition: all ease .3s;
+}
+
+.transparent_button_green {
+    color: var(--main-green-color);
+    border: 3px solid var(--main-green-color) !important;
+}
+
+.transparent_button_green:hover {
+    background-color: var(--main-green-color);
+    border: none;
+    color: var(--main-white-color);
+}
+
+.transparent_button_white {
+    border: 3px solid var(--main-white-color) !important;
+}
+
+.transparent_button_white:hover {
+    background-color: var(--main-white-color);
+    border: none;
+    color: black;
+}
+
+.green_text {
+    color: var(--main-green-color);
+}
+
+
+/* Promo Section */
+
+.promo_section {
+    display: flex;
+    background-color: var(--main-white-color);
+    height: 4rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.promo_section_items_wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 98%;
+}
+
+.promo_carousell_button_active {
+    background-color: var(--main-green-color);
+    border: none;
+}
+
+.promo_text {
+    color: var(--main-green-color);
+    font-size: 1rem;
+}
+
+#x_icon {
+    color: #ccc;
+}
+
+/* Header Section */
+
+#logo {
+    width: 9rem;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.563rem;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+
+.logo_nav_separator {
+    display: flex;
+    align-items: center;
+}
+
+.nav {
+    margin-left: 3.75rem;
+}
+
+.header_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 98%;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav li a {
+    font-size: 1.125rem;
+    color: var(--main-white-color);
+    margin-right: 2.5rem;
+}
+
+.login_button {    
+    margin-left: 1.875rem;
+    color: var(--main-white-color);
+    cursor: pointer;
+}
+
+.magnifying_icon {
+    color: var(--main-white-color);
+}
+
+.header_icon_login_seperator {
+    display: flex;
+    align-items: center;
+}
+
+/* Hero Section */
+
+.hero_section {
+    background: url(./media/hero_section_image.png);
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.hero_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+.hero_section_content_wrapper {
+    margin: 250px 0px 0px 150px;
+}
+
+.mortagage_button {
+    color: var(--main-white-color);
+    font-size: 1.125rem;
+}
+
+.hero_section_title {
+    font-size: 2.5rem;
+    color: var(--main-white-color);
+    line-height: 1.1;
+    margin-bottom: 1rem;
+    letter-spacing: 0.063rem;
+}
+
+.hero_section_text {
+    margin-bottom: 2rem;
+    color: var(--main-white-color);
+    line-height: 1.7;
+    font-size: 1.125rem;
+}
+
+.hero_carousell_button_active {
+    background-color: var(--main-white-color);
+}
+
+.hero_carousell_buttons_container {
+    width: 98%;
+    align-self: center;
+    margin-bottom: 1.875rem;
+}
+
+/* Why Section */
+
+.why_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem;
+}
+
+.why_section_title {
+    color: var(--main-green-color);
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.why_section_subtitle {
+    color: var(--regular-text-color);
+    text-align: center;
+    font-size: 1.125rem;
+    line-height: 1.5;
+    font-weight: 400;
+    margin-top: 1.875rem;
+}
+
+.why_section_circles {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3.75rem;
+    width: 80%;
+    flex-wrap: wrap;
+}
+
+.why_section_circle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.why_section_circle_images {
+    width: 240px;
+    border: 0.25rem solid #ccc;
+    border-radius: 50% !important;
+    height: 240px;
+    transition: all ease .3s;
+}
+
+.why_section_circle_title {
+    color: var(--main-green-color);
+    font-size: 1.375rem;
+    margin-top: 0.625rem;
+}
+
+.why_section_circle_text {
+    margin-top: 0.625rem;
+    font-size: 1.125rem;
+    color: var(--regular-text-color);
+}
+
+.why_section_circle_images:hover {
+    border: 0.25rem solid var(--main-green-color);
+}
+
+/* Personal Banking Section */
+
+.personal_banking_section {
+    background-color: #f5f5f5;
+    margin-top: 4.688rem;
+    padding: 4.688rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.personal_banking_section_products {
+    padding: 3rem 0;
+    display: flex;
+    justify-content: space-around;
+    width: 65%;
+    flex-wrap: wrap;
+}
+
+.personal_banking_section_title {
+    font-size: 2.5rem;
+    color: var(--titles-grey-color);
+    text-align: center;
+}
+
+.personal_banking_section_options_list {
+    display: flex;
+    list-style: none;
+    margin-top: 1.25rem;
+}
+
+.list_option {
+    font-size: 1.125rem;
+    color: var(--regular-text-color);
+    text-transform: uppercase;
+    margin-right: 1.875rem;
+}
+
+.list_option_active {
+    color: var(--main-green-color);
+    border-bottom: 2px solid var(--main-green-color);
+}
+
+.list_option:hover {
+    color: var(--main-green-color);
+}
+
+.product {
+    background-color: var(--main-white-color);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    border-top: 5px solid var(--main-green-color);
+    box-shadow: 0 2px 12px rgb(0 0 0 / 15%);
+    align-items: center;
+    justify-content: space-between;
+    transition: all ease .3s;
+    min-height: 31.25rem;
+}
+
+.product:hover {
+    box-shadow: 0 2px 40px rgb(0 0 0 / 30%);
+}
+
+.product_title {
+    font-size: 1.375rem;
+    text-align: center;
+}
+
+.product_subtitle {
+    font-size: 1rem;
+    text-align: center;
+    color: var(--regular-text-color);
+    font-weight: 400;
+}
+
+.products_details {
+    list-style: none;
+    margin: 2rem 0;
+}
+
+.product_detail {
+    color: #7e7e7e;
+    border-bottom: 1px solid #ccc;
+    padding: .75em 0 .75em 30px;
+    background: transparent url(./media/check-solid.svg) left center no-repeat;
+    background-size: 1rem 1rem;
+}
+
+.product_detail:nth-child(1) {
+    border-top: 1px solid #ccc;
+}
+
+.product_links {
+    display: flex;
+    flex-direction: column;
+}
+
+.learn_more_button {
+    text-align: center;
+    display: inline-block;
+    text-transform: uppercase;
+    margin-top: 1rem;
+}
+
+.products_carousell_buttons {
+    align-self: center;
+}
+
+.products_carousell_button_active {
+    background-color: var(--regular-text-color);
+}
+
+/* Resources Section */
+
+.resources_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4.688rem;
+}
+
+.resources_section_title {
+    font-weight: 400;
+    font-size: 2.5rem;
+    margin-bottom: 1.25rem;
+    color: var(--titles-grey-color);
+}
+
+.resources_section_subtitle {
+    font-size: 1.125rem;
+    font-weight: 400;
+    margin-bottom: 2.25rem;
+    color: var(--regular-text-color);
+}
+
+.resources_section_carousell {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+}
+
+.resources_card {
+    display: flex;
+    flex-direction: column;
+}
+
+.resources_card_image {
+    width: 340px;
+    max-height: 280px;
+}
+
+.resources_card_heading {
+    padding-top: 1rem;
+    text-align: center;
+    color: var(--regular-text-color);
+}
+
+/* Footer */
+
+footer {
+    padding: 5.625rem 1.125rem;
+    background-color: #222;
+}
+
+.footer_columns_container {
+    margin: 0 10.625rem;
+    display: flex;
+}
+
+.footer_column {
+    margin-right: 1.875rem;
+    width: 20%;
+}
+
+.footer_column_title {
+    color: #fff;
+    font-weight: 400;
+    font-size: 1.25rem;
+    margin-bottom: 1.25rem;
+}
+
+.footer_column_list {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+.footer_column_list_item {
+    color: #999;
+}
+
+.footer_column_text {
+    color: #999;
+}
+
+.social_icons {
+    color: #999;
+    border: 1px solid #999;
+    border-radius: 50%;
+    padding: 0.438rem;
+    font-size: 1rem;
+    margin-right: 0.313rem;    
+}
+
+.socials {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.rights {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10.625rem;
+    margin-right: 10.625rem;
+    margin-top: 5.625rem;
+}
+
+
+.display_nne {
+    display: none;
+}
+
+.bars {
+    color: white;
+    margin-left: 1.875rem;
+    display: none;
+}
+
+@media (max-width: 1650px) { 
+    .personal_banking_section_products {
+        width: 75%;
+    }
+}
+
+@media (max-width: 1450px) { 
+    .personal_banking_section_products {
+        width: 85%;
+    }
+}
+
+@media (max-width: 1051px) { 
+    .why_section_circle:nth-child(3) {
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 765px) { 
+    .why_section_circle:nth-child(2) {
+        margin-top: 50px;
+    }
+    .why_section_circle {
+        flex-basis: 100%;
+    }
+
+    .why_section_title {
+        font-size: 1.75rem;
+    }
+}
+
+@media (max-width: 1064px) { 
+    .personal_banking_section_products {
+        width: 95%;
+    }
+}
+
+@media (max-width: 1250px) { 
+    .personal_banking_section_products {
+        width: 90%;
+    }
+}
+
+@media (max-width: 1125px) { 
+
+    .product {
+        flex-basis: 80%;
+    }
+
+    .product:nth-child(2) {
+        margin-top: 50px;
+    }
+
+    .product:nth-child(3) {
+        margin-top: 50px;
+    }
+
+}
+
+@media (max-width: 750px) { 
+    .personal_banking_section_title {
+        font-size: 1.75rem;
+    }
+}
+
+@media (max-width: 1350px) { 
+    .why_section_circles {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 1080px) {
+    /* Header Section */
+
+    .nav li a {
+        margin-right: 1.5rem;
+    }
+
+    .bars {
+        display: block;        
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .header_wrapper {
+        max-width: 90%;
+    }
+}
