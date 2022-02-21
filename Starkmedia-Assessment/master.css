@@ -84,6 +84,10 @@ a {
 }
 
 
+.display_none {
+    display: none !important;
+}
+
 /* Promo Section */
 
 .promo_section {
@@ -150,10 +154,44 @@ header {
     list-style: none;
 }
 
+.regular_navbar_item {
+    padding: 0 10px;
+}
+
 .nav li a {
     font-size: 1.125rem;
     color: var(--main-white-color);
-    margin-right: 2.5rem;
+    position: relative;
+}
+
+.dropdown_menu {
+    position: absolute;
+    top: 3rem;
+    left: -2rem;
+    background-color: var(--main-white-color);
+    color: black;
+    width: 90rem;
+    padding: 4rem;
+    display: flex;
+    border: 4px solid #033f72;
+}
+
+.dropdown_column {
+    margin-right: 6.25rem;
+}
+
+.dropdown_column ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown_column ul li {
+    padding: 0.5rem 0 0 0rem;
+}
+
+.dropdown_column_title {
+    color: #033f72;
+    font-weight: bold;
 }
 
 .login_button {    
@@ -174,7 +212,7 @@ header {
 /* Hero Section */
 
 .hero_section {
-    background: url(./media/hero_section_image.png);
+    background-image: linear-gradient(300deg, transparent, rgba(100,167,224,1) 100%), url(./media/hero_section_image.png);
     background-size: cover;
     background-position: 50% 50%;
     height: 800px;
@@ -415,7 +453,6 @@ header {
     display: flex;
     justify-content: space-around;
     width: 100%;
-    align-items: center;
 }
 
 .resources_card {
@@ -432,6 +469,10 @@ header {
     padding-top: 1rem;
     text-align: center;
     color: var(--regular-text-color);
+}
+
+.resources_arrow {
+    align-self: center;
 }
 
 /* Footer */
@@ -687,5 +728,16 @@ footer {
     .rights {
         margin: 0;
         justify-content: center;
+    }
+
+    .hero_section {
+        background-image: linear-gradient(180deg, transparent, rgba(100,167,224,1) 70%), url(./media/hero_section_image.png);
+    }
+}
+
+@media (max-width: 1250px) {
+    .dropdown_menu {
+        width: 65rem;
+        left: -10rem;
     }
 }
