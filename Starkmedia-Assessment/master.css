@@ -70,6 +70,7 @@ a {
 
 .transparent_button_white {
     border: 3px solid var(--main-white-color) !important;
+    color: var(--main-white-color);
 }
 
 .transparent_button_white:hover {
@@ -124,10 +125,7 @@ a {
 header {
     display: flex;
     justify-content: center;
-    margin-top: 1.563rem;
-    position: absolute;
     width: 100%;
-    z-index: 1;
 }
 
 .logo_nav_separator {
@@ -177,26 +175,17 @@ header {
 
 .hero_section {
     background: url(./media/hero_section_image.png);
-    height: 800px;
-    background-position: center;
     background-size: cover;
-    position: relative;
-    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    height: 800px;
+    padding-top: 1.563rem;
 }
 
 .hero_content {
+    padding: 200px 0px 0px 150px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
-
-.hero_section_content_wrapper {
-    margin: 250px 0px 0px 150px;
-}
-
-.mortagage_button {
-    color: var(--main-white-color);
-    font-size: 1.125rem;
 }
 
 .hero_section_title {
@@ -208,20 +197,18 @@ header {
 }
 
 .hero_section_text {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     color: var(--main-white-color);
     line-height: 1.7;
     font-size: 1.125rem;
 }
 
-.hero_carousell_button_active {
-    background-color: var(--main-white-color);
+.hero_carousell_buttons_container {
+    margin-top: 1rem;
 }
 
-.hero_carousell_buttons_container {
-    width: 98%;
-    align-self: center;
-    margin-bottom: 1.875rem;
+.hero_carousell_button_active {
+    background-color: var(--main-white-color);
 }
 
 /* Why Section */
@@ -253,7 +240,6 @@ header {
     display: flex;
     justify-content: space-around;
     margin-top: 3.75rem;
-    width: 80%;
     flex-wrap: wrap;
 }
 
@@ -510,11 +496,6 @@ footer {
     flex-wrap: wrap;
 }
 
-
-.display_nne {
-    display: none;
-}
-
 .bars {
     color: white;
     margin-left: 1.875rem;
@@ -524,7 +505,6 @@ footer {
 @media (max-width: 500px) {
 
     .hero_section_content_wrapper {
-        margin: 250px auto 0px auto;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -540,13 +520,15 @@ footer {
         font-size: 1rem;
     }
 
-
     .hero_content {
+        padding: 100px 0px 0px 0px !important;
         justify-content: flex-start;
+        margin: 0;
     }
 
     .hero_section {
         height: 31.25rem;
+        background-position: 70% 0;
     }
 
     .hero_carousell_buttons_container {
@@ -565,6 +547,14 @@ footer {
     #x_icon {
         font-size: 1rem;
     }
+
+    #logo {
+        width: 6rem;
+    }
+
+    .login_button {
+        padding: 5px 15px;
+    }
 }
 
 @media (max-width: 1650px) { 
@@ -579,7 +569,7 @@ footer {
     }
 }
 
-@media (max-width: 1051px) { 
+@media (max-width: 950px) { 
     .why_section_circle:nth-child(3) {
         margin-top: 50px;
     }
@@ -660,6 +650,20 @@ footer {
 }
 
 @media (max-width: 800px) {
+
+    .hero_section_content_wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero_content {
+        padding: 150px 0px 0px 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     .footer_columns_container {
         flex-direction: column;
         margin: 0 auto;
@@ -685,4 +689,3 @@ footer {
         justify-content: center;
     }
 }
-    
