@@ -88,6 +88,37 @@ a {
     display: none !important;
 }
 
+
+/* Side Bar Element */
+
+.side_bar {
+    position: fixed;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 18.75rem;
+    overflow: hidden;
+    right: 0;
+    z-index: 2;
+    box-shadow: inset 0 0 5px #767676;
+}
+
+.side_bar_x {
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #4C4C4C;
+    right: 0;
+    margin: 1.25rem 1.25rem 1.25rem 0;
+    align-self: flex-end;
+}
+
+.side_bar_link {
+    color: #4C4C4C;
+    display: block;
+    padding: 1.5625rem  0 1.5625rem 1.5625rem;
+    border-bottom: 1px solid #e3e3e3;
+}
 /* Promo Section */
 
 .promo_section {
@@ -170,7 +201,7 @@ header {
     left: -2rem;
     background-color: var(--main-white-color);
     color: black;
-    width: 90rem;
+    width: 80rem;
     padding: 4rem;
     display: flex;
     border: 4px solid #033f72;
@@ -242,7 +273,7 @@ header {
 }
 
 .hero_carousell_buttons_container {
-    margin-top: 1rem;
+    margin-top: 15rem;
 }
 
 .hero_carousell_button_active {
@@ -453,6 +484,7 @@ header {
     display: flex;
     justify-content: space-around;
     width: 100%;
+    flex-wrap: wrap;
 }
 
 .resources_card {
@@ -541,9 +573,16 @@ footer {
     color: white;
     margin-left: 1.875rem;
     display: none;
+    cursor: pointer;
 }
 
+
+/* Media Queries */
+
 @media (max-width: 500px) {
+    .hero_carousell_buttons_container {
+        margin-top: 1rem;
+    }
 
     .hero_section_content_wrapper {
         display: flex;
@@ -570,6 +609,7 @@ footer {
     .hero_section {
         height: 31.25rem;
         background-position: 70% 0;
+        background-image: linear-gradient(180deg, transparent, rgba(100,167,224,1) 100%), url(./media/hero_section_image.png);
     }
 
     .hero_carousell_buttons_container {
@@ -598,21 +638,9 @@ footer {
     }
 }
 
-@media (max-width: 1650px) { 
-    .personal_banking_section_products {
-        width: 75%;
-    }
-}
-
-@media (max-width: 1450px) { 
-    .personal_banking_section_products {
-        width: 85%;
-    }
-}
-
-@media (max-width: 950px) { 
-    .why_section_circle:nth-child(3) {
-        margin-top: 50px;
+@media (max-width: 750px) { 
+    .personal_banking_section_title {
+        font-size: 1.75rem;
     }
 }
 
@@ -629,68 +657,19 @@ footer {
     }
 }
 
-@media (max-width: 1064px) { 
-    .personal_banking_section_products {
-        width: 95%;
-    }
-}
-
-@media (max-width: 1250px) { 
-    .personal_banking_section_products {
-        width: 90%;
-    }
-}
-
-@media (max-width: 1125px) { 
-
-    .product {
-        flex-basis: 80%;
-    }
-
-    .product:nth-child(2) {
-        margin-top: 50px;
-    }
-
-    .product:nth-child(3) {
-        margin-top: 50px;
-    }
-
-}
-
-@media (max-width: 750px) { 
-    .personal_banking_section_title {
-        font-size: 1.75rem;
-    }
-}
-
-@media (max-width: 1350px) { 
-    .why_section_circles {
-        width: 100%;
-    }
-}
-
-
-@media (max-width: 1080px) {
-    /* Header Section */
-
-    .nav li a {
-        margin-right: 1.5rem;
-    }
-
-    .bars {
-        display: block;        
-    }
-
-    .nav {
-        display: none;
-    }
-
-    .header_wrapper {
-        max-width: 90%;
-    }
-}
-
 @media (max-width: 800px) {
+
+    .hero_carousell_buttons_container {
+        margin-top: 1rem;
+    }
+
+    .resources_section_title {
+        text-align: center;
+    }
+
+    .resources_section_subtitle {
+        text-align: center;
+    }
 
     .hero_section_content_wrapper {
         display: flex;
@@ -731,13 +710,109 @@ footer {
     }
 
     .hero_section {
-        background-image: linear-gradient(180deg, transparent, rgba(100,167,224,1) 70%), url(./media/hero_section_image.png);
+        background-image: linear-gradient(180deg, transparent, rgba(100,167,224,1) 100%), url(./media/hero_section_image.png);
     }
 }
 
-@media (max-width: 1250px) {
+@media (max-width: 846px) {
+    .resources_card:nth-child(3) {
+        margin-top: 2.5rem;
+    }
+}
+
+@media (max-width: 1051px) { 
+    .why_section_circle:nth-child(3) {
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 1064px) { 
+    .personal_banking_section_products {
+        width: 95%;
+    }
+}
+
+@media (max-width: 1080px) {
+    .nav li a {
+        margin-right: 1.5rem;
+    }
+
+    .bars {
+        display: block;        
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .header_wrapper {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 1125px) { 
+
+    .product {
+        flex-basis: 80%;
+    }
+
+    .product:nth-child(2) {
+        margin-top: 50px;
+    }
+
+    .product:nth-child(3) {
+        margin-top: 50px;
+    }
+
+}
+
+@media (max-width: 1186px) {
+    .resources_card:nth-child(4) {
+        margin-top: 2.5rem;
+    }
+
+    .resources_arrow {
+        display: none;
+    }
+}
+
+@media (max-width: 1250px) { 
+    .personal_banking_section_products {
+        width: 90%;
+    }
+
     .dropdown_menu {
         width: 65rem;
         left: -10rem;
+    }
+}
+
+@media (max-width: 1350px) { 
+    .why_section_circles {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1450px) { 
+    .personal_banking_section_products {
+        width: 85%;
+    }
+
+    .dropdown_menu {
+        left: -10rem;
+        width: 65rem;
+    }
+}
+
+@media (max-width: 1590px) { 
+    .dropdown_menu {
+        left: -10rem;
+        width: 75rem;
+    }
+}
+
+@media (max-width: 1650px) { 
+    .personal_banking_section_products {
+        width: 75%;
     }
 }
