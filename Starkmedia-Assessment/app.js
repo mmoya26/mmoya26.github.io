@@ -34,12 +34,12 @@
 
     // When bar is click remove the display_none class from the side bar element
     barsElement.addEventListener("click", () => {
-        sideBarELement.classList.remove("display_none");
+        sideBarELement.classList.toggle("translate_side_bar");
     });
 
     // When the X icon inside the side bar is click add the display_none class to the side bar element
     sideBarXIcon.addEventListener("click", () => {
-        sideBarELement.classList.add("display_none");
+        sideBarELement.classList.toggle("translate_side_bar");
     });
 
     function setSwiper(){
