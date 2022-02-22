@@ -605,9 +605,18 @@ footer {
 
 /* Media Queries */
 
-@media (max-width: 450px) {
+@media (max-width: 390px) {
+
+    .swiper-backface-hidden .swiper-slide {
+        width: 290px !important;
+    }
+
     .swiper-slide {
-        margin-right: 20px !important;
+        margin-right: 0 !important;
+    }
+
+    .resources_card_text {
+        margin-left: -85px;
     }
 }
 
