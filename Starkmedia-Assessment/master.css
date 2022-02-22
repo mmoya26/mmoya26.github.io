@@ -310,6 +310,7 @@ header {
     justify-content: space-around;
     margin-top: 3.75rem;
     flex-wrap: wrap;
+    width: 100%;
 }
 
 .why_section_circle {
@@ -459,53 +460,63 @@ header {
 
 /* Resources Section */
 
-.resources_section {
+
+section .resource_card .image {
+    height: 250px;
+    width: 400px;
+    display: block;
+} 
+
+section .resource_card .image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.resource_card {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 4.688rem;
+    justify-content: center;
+}
+
+.resources_card_text {
+    text-align: center;
+    padding-top: 1rem;
+    color: var(--regular-text-color);
+}
+
+.swiper {
+    width: 100%;
+}
+
+.resources_section {
+    padding: 8rem 4.688rem;
+
 }
 
 .resources_section_title {
     font-weight: 400;
     font-size: 2.5rem;
-    margin-bottom: 1.25rem;
-    color: var(--titles-grey-color);
+    margin-bottom: 2rem;
+    text-align: center;
 }
 
 .resources_section_subtitle {
     font-size: 1.125rem;
     font-weight: 400;
-    margin-bottom: 2.25rem;
+    margin-bottom: 4rem;
     color: var(--regular-text-color);
-}
-
-.resources_section_carousell {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    flex-wrap: wrap;
-}
-
-.resources_card {
-    display: flex;
-    flex-direction: column;
-}
-
-.resources_card_image {
-    width: 340px;
-    max-height: 280px;
-}
-
-.resources_card_heading {
-    padding-top: 1rem;
     text-align: center;
-    color: var(--regular-text-color);
 }
 
-.resources_arrow {
-    align-self: center;
+.carousel {
+    display: flex;
+    align-items: center;
 }
+
+.font_awesome_icons {
+    cursor: pointer;
+}
+
 
 /* Footer */
 
@@ -577,9 +588,11 @@ footer {
 }
 
 
+
 /* Media Queries */
 
 @media (max-width: 500px) {
+
     .hero_carousell_buttons_container {
         margin-top: 1rem;
     }
@@ -648,8 +661,9 @@ footer {
     .why_section_circle:nth-child(2) {
         margin-top: 50px;
     }
+
     .why_section_circle {
-        flex-basis: 100%;
+        flex-basis: 80%;
     }
 
     .why_section_title {
@@ -753,7 +767,7 @@ footer {
 @media (max-width: 1125px) { 
 
     .product {
-        flex-basis: 80%;
+        flex-basis: 100%;
     }
 
     .product:nth-child(2) {
@@ -784,12 +798,6 @@ footer {
     .dropdown_menu {
         width: 65rem;
         left: -10rem;
-    }
-}
-
-@media (max-width: 1350px) { 
-    .why_section_circles {
-        width: 100%;
     }
 }
 

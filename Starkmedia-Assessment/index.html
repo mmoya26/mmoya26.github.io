@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
@@ -219,31 +222,39 @@
     <section class="resources_section">
         <h2 class="resources_section_title">Resources from <strong>The Vault</strong></h2>
         <h4 class="resources_section_subtitle">Insights for your financial well-being from our team of experts.</h4>
-
-        <div class="resources_section_carousell">
-            <i class="fa-solid fa-angle-left font_awesome_icons resources_arrow" style="color: #a1a1a1"></i>
-            <div class="resources_card">
-                <a href="#">
-                    <img src="./media/resources_1.png" class="resources_card_image" alt="Charles Guthrie" />
-                </a>
-                <p class="resources_card_heading">Disccusion with Charles Guthrie, <br> Director of Athletics at
-                    University <br> of Wisconsin - Green Bay</p>
+        <div class="carousel">
+            <i class="fa-solid fa-angle-left fa-2x prev_arrow font_awesome_icons carousel_arrows" style="color: #a1a1a1"></i>
+            <div class="swiper mySwiper cards_container">
+                <div class="swiper-wrapper content">
+                    <div class="swiper-slide resource_card">
+                        <div class="resource_card_content">
+                            <a href="#" class="image">
+                                <img src="./media/resources_1.png" alt="Charles Guthrie" />
+                            </a>
+                            <p class="resources_card_text">Disccusion with Charles Guthrie, <br> Director of Athletics at
+                                University <br> of Wisconsin - Green Bay</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide resource_card">
+                        <div class="resource_card_content">
+                            <a href="#" class="image">
+                                <img src="./media/resources_2.png" alt="Annie Dart" />
+                            </a>
+                            <p class="resources_card_text">Disccusion with Annie Dart, Donor <br> Engagement Program Officer at
+                                Greater <br> Green Bay Community Foundation </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide resource_card">
+                        <div class="resource_card_content">
+                            <a href="#" class="image">
+                                <img src="./media/resources_3.png" alt="Jolene Hostak" />
+                            </a>
+                            <p class="resources_card_text">Jolene Hostak shares business best <br> practices for fraud protection</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="resources_card">
-                <a href="#">
-                    <img src="./media/resources_2.png" class="resources_card_image" alt="Annie  Dart" />
-                </a>
-                <p class="resources_card_heading">Disccusion with Annie Dart, Donor <br> Engagement Program Officer at
-                    Greater <br> Green Bay Community Foundation </p>
-            </div>
-            <div class="resources_card">
-                <a href="#">
-                    <img src="./media/resources_3.png" class="resources_card_image" alt="Jolene Hostak" />
-                </a>
-                <p class="resources_card_heading">Jolene Hostak shares business best <br> practices for fraud
-                    protection</p>
-            </div>
-            <i class="fa-solid fa-angle-right font_awesome_icons resources_arrow" style="color: #a1a1a1"></i>
+            <i class="fa-solid fa-angle-right fa-2x next_arrow font_awesome_icons carousel_arrows" style="color: #a1a1a1"></i>
         </div>
     </section>
 
@@ -310,7 +321,15 @@
         </div>
     </footer>
 
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Carousel JS File Swiper -->
+    <script src="./carousel.js"></script>
+
+    <!-- App JS -->
     <script src="./app.js"></script>
+    
 </body>
 
 </html>
