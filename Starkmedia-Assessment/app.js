@@ -28,19 +28,19 @@
         dropDownMenu.classList.add("display_none");
     });
 
-
     const sideBarELement = document.querySelector(".side_bar");
     const barsElement = document.querySelector(".bars");
     const sideBarXIcon = document.querySelector(".side_bar_x");
 
+    // When bar is click remove the display_none class from the side bar element
     barsElement.addEventListener("click", () => {
         sideBarELement.classList.remove("display_none");
     });
 
+    // When the X icon inside the side bar is click add the display_none class to the side bar element
     sideBarXIcon.addEventListener("click", () => {
         sideBarELement.classList.add("display_none");
     });
-
 
     function setSwiper(){
         // User hasn't resized in 500ms
@@ -51,11 +51,15 @@
                 slidesPerView: 1,
                 spaceBetween: 45,
                 slidesPerGroup: 1,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
                 loop: true,
                 loopFillGroupWithBlank: true,
                 navigation: {
-                    nextEl: ".next_arrow",
-                    prevEl: ".prev_arrow",
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
                 },
             });
         } else if(window.innerWidth <= 1400) {
@@ -64,11 +68,15 @@
                 slidesPerView: 2,
                 spaceBetween: 45,
                 slidesPerGroup: 2,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
                 loop: true,
                 loopFillGroupWithBlank: true,
                 navigation: {
-                    nextEl: ".next_arrow",
-                    prevEl: ".prev_arrow",
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
                 },
             });
         } else {
@@ -77,11 +85,15 @@
                 slidesPerView: 3,
                 spaceBetween: 30,
                 slidesPerGroup: 3,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
                 loop: true,
                 loopFillGroupWithBlank: true,
                 navigation: {
-                    nextEl: ".next_arrow",
-                    prevEl: ".prev_arrow",
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
                 },
             });
         }

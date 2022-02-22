@@ -517,6 +517,11 @@ section .resource_card .image img {
     cursor: pointer;
 }
 
+.carousel_arrows {
+    top: 30px;
+    position: relative;
+}
+
 
 /* Footer */
 
@@ -588,8 +593,24 @@ footer {
 }
 
 
+.swiper-pagination {
+    position: relative;
+}
+
 
 /* Media Queries */
+
+@media (max-width: 400px) {
+    .personal_banking_section_products {
+        width: 80%;
+    }
+}
+
+@media (max-width: 450px) {
+    .swiper-slide {
+        margin-right: 20px !important;
+    }
+}
 
 @media (max-width: 500px) {
 
@@ -740,11 +761,6 @@ footer {
     }
 }
 
-@media (max-width: 1064px) { 
-    .personal_banking_section_products {
-        width: 95%;
-    }
-}
 
 @media (max-width: 1080px) {
     .nav li a {
@@ -762,22 +778,23 @@ footer {
     .header_wrapper {
         max-width: 90%;
     }
-}
-
-@media (max-width: 1125px) { 
 
     .product {
         flex-basis: 100%;
     }
+}
 
-    .product:nth-child(2) {
-        margin-top: 50px;
-    }
-
+@media (max-width: 1326px) {
     .product:nth-child(3) {
         margin-top: 50px;
     }
 
+}
+
+@media (max-width: 1021px) {
+    .product:nth-child(2) {
+        margin-top: 50px;
+    }
 }
 
 @media (max-width: 1186px) {
@@ -790,22 +807,24 @@ footer {
     }
 }
 
-@media (max-width: 1250px) { 
-    .personal_banking_section_products {
-        width: 90%;
+@media (max-width: 1530px) {
+    .product:nth-child(3) {
+        margin-top: 50px;
     }
+}
 
+@media (max-width: 1250px) { 
     .dropdown_menu {
         width: 65rem;
         left: -10rem;
     }
+
+    .swiper-button-prev, .swiper-button-next {
+        display: none;
+    }
 }
 
 @media (max-width: 1450px) { 
-    .personal_banking_section_products {
-        width: 85%;
-    }
-
     .dropdown_menu {
         left: -10rem;
         width: 65rem;
@@ -820,7 +839,8 @@ footer {
 }
 
 @media (max-width: 1650px) { 
-    .personal_banking_section_products {
-        width: 75%;
+    .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, 
+    .swiper-pagination-custom, .swiper-pagination-fraction {
+        bottom: -20px;
     }
 }
