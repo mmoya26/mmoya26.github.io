@@ -10,7 +10,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: "Source Sans Pro";
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 img {
@@ -88,6 +88,11 @@ a {
     display: none !important;
 }
 
+.swiper-pagination {
+    position: relative;
+    display: none;
+}
+
 
 /* Side Bar Element */
 
@@ -119,6 +124,7 @@ a {
     padding: 1.5625rem  0 1.5625rem 1.5625rem;
     border-bottom: 1px solid #e3e3e3;
 }
+
 /* Promo Section */
 
 .promo_section {
@@ -593,18 +599,7 @@ footer {
 }
 
 
-.swiper-pagination {
-    position: relative;
-}
-
-
 /* Media Queries */
-
-@media (max-width: 400px) {
-    .personal_banking_section_products {
-        width: 80%;
-    }
-}
 
 @media (max-width: 450px) {
     .swiper-slide {
@@ -659,6 +654,10 @@ footer {
         max-width: 90%;
     }
 
+    .personal_banking_section_products {
+        width: 86%;
+    }
+
     #x_icon {
         font-size: 1rem;
     }
@@ -680,7 +679,7 @@ footer {
 
 @media (max-width: 765px) { 
     .why_section_circle:nth-child(2) {
-        margin-top: 50px;
+        margin-top: 3.125rem;
     }
 
     .why_section_circle {
@@ -755,9 +754,15 @@ footer {
     }
 }
 
+@media (max-width: 1020px) {
+    .product:nth-child(2) {
+        margin-top: 3.125rem;
+    }
+}
+
 @media (max-width: 1051px) { 
     .why_section_circle:nth-child(3) {
-        margin-top: 50px;
+        margin-top: 3.125rem;
     }
 }
 
@@ -778,24 +783,14 @@ footer {
     .header_wrapper {
         max-width: 90%;
     }
-
-    .product {
-        flex-basis: 100%;
-    }
 }
 
-@media (max-width: 1326px) {
+@media (max-width: 1530px) {
     .product:nth-child(3) {
-        margin-top: 50px;
-    }
-
-}
-
-@media (max-width: 1021px) {
-    .product:nth-child(2) {
-        margin-top: 50px;
+        margin-top: 3.125rem;
     }
 }
+
 
 @media (max-width: 1186px) {
     .resources_card:nth-child(4) {
@@ -805,11 +800,9 @@ footer {
     .resources_arrow {
         display: none;
     }
-}
-
-@media (max-width: 1530px) {
-    .product:nth-child(3) {
-        margin-top: 50px;
+    
+    .swiper-pagination {
+        display: block;
     }
 }
 
